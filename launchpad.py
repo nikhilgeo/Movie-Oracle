@@ -6,7 +6,6 @@ movie_list = []
 yearlisttmp = list(range(1990, 2050))
 yearlist = [str(x) for x in yearlisttmp]
 
-print("Greeting From MAVO !!")
 input("If you are Online I can get you the ratings of movies in this folder, may I ?")
 
 for root, dirs, files in os.walk("."):
