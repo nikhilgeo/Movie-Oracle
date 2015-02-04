@@ -10,7 +10,7 @@ input("If you are Online I can get you the ratings of movies in this folder, may
 
 for root, dirs, files in os.walk("."):
     for names in files:
-        if ((names.find('.mp4') != -1) or (names.find('.avi') != -1) or (names.find('.mvk') !=-1)) :
+        if ((names.find('.mp4') != -1) or (names.find('.avi') != -1) or (names.find('.mkv') !=-1)) :
             for year in yearlist:
                 if names.find(year) != -1:
                     trimmed_title = names[:names.find(year)+4]
@@ -24,6 +24,8 @@ for root, dirs, files in os.walk("."):
                         trimmed_title = trimmed_title.replace('[', '')
                     if trimmed_title.find(']') != -1:
                         trimmed_title = trimmed_title.replace(']', '')
+                    if trimmed_title.find('  ') != -1:
+                        trimmed_title = trimmed_title.replace('  ', ' ')
                     print(trimmed_title)
                     trimmed_title = trimmed_title.strip()
 
