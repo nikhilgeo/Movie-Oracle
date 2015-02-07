@@ -1,4 +1,4 @@
-# GetMovieRatingIMDB_RottenTomato
+# Movie-Oracle
 
 1 TB HDD full of Hollywood movies, and want to watch a movie out of it. 
 Yep to find that exact movie which got a decent IMDB and Rottentomato rating it's a nightmare, just like finding a needle out of hay stack.
