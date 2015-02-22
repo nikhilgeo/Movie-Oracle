@@ -12,6 +12,7 @@ OMDB API is used to query IMDB and Rottentomato details.
 How to Run:
 Run the script from a folder having movie files.
 python3.4 launchpad.py
+[Should install Apache Request module check this link: http://docs.python-requests.org/en/latest/user/install/#install]
 
 The movie rating will be displayed on screen and a handy CSV file will be created in the same folder with the name "MovieRating.csv"
 
