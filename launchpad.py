@@ -80,6 +80,8 @@ for root, dirs, files in os.walk("."):
                 trimmed_title = trimmed_title.replace('}', '')
             if trimmed_title.find('  ') != -1:
                 trimmed_title = trimmed_title.replace('  ', ' ')
+            if trimmed_title.find('_') != -1:
+                trimmed_title = trimmed_title.replace('_', ' ')
             trimmed_title = trimmed_title.strip()      
             # print(trimmed_title)
             # print(year)
